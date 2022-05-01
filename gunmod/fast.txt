@@ -1,0 +1,5 @@
+for i,v in pairs(getgc(true)) do
+   if typeof(v) == 'table' and rawget(v, 'firingRPM') then
+       rawset(v, 'firingRPM', 100000000000000)
+   end
+end

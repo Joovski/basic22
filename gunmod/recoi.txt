@@ -1,0 +1,5 @@
+for i,v in pairs(getgc(true)) do
+   if typeof(v) == 'table' and rawget(v, 'cameraRecoil') then
+       rawset(v, 'cameraRecoil', 0)
+   end
+end
